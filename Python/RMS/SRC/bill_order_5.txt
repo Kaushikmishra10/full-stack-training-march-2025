@@ -1,0 +1,13 @@
+DineMaster Restaurant
+Order ID: 5
+Table No: 5
+Date: 2025-12-10 12:06:14
+----------------------------------------
+Item                  Qty     Price
+Paneer Butter Masala    1    249.00
+----------------------------------------
+                      Subtotal:   249.00
+                           Tax:    12.45
+                         Total:   261.45
+
+Thank you! Visit again.

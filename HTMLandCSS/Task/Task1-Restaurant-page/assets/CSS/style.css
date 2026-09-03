@@ -1,0 +1,73 @@
+ /* Images */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .img-responsive{
+            max-width: 100%;
+        }
+        
+        img{
+          width: 100vw;
+          max-height: 100vh;
+          object-fit: cover;
+        }
+
+        /* Text */
+
+        h1{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 900;
+            font-size: 4rem;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        h2{
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 3rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .menu{
+            text-align: center;
+        }
+        h3{
+            font-family: "Open Sans", sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: .7rem;
+
+        }
+        ul{
+            font-family: "Cossette Titre", sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+            font-style: normal;
+            margin-bottom: 2rem;            
+        }
+        ol{
+            font-family: "Cossette Titre", sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+            font-style: normal;
+            margin-bottom: 2rem;
+        }
+        thead{
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.5rem;
+            font-style: italic;
+
+        }
+        tbody{
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.2rem;
+            font-style: normal;
+        }
+        table{
+            margin-bottom: 2rem;
+
+        }
+

@@ -1,0 +1,19 @@
+body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .box {
+      background: linear-gradient(to bottom right, #0052cc, #3366ff);
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      flex: 1;
+    }
