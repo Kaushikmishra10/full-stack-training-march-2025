@@ -1,0 +1,520 @@
+/* =============================================
+   analytics.module.css
+   Layout: React-Bootstrap Row/Col
+   Colors & custom styles only
+   ============================================= */
+
+.page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 28px 32px;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* ── Header ────────────────────────────────── */
+.pageTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.breadcrumb {
+    font-size: 0.82rem;
+    color: #9a9ab0;
+}
+
+/* ── Base Card ─────────────────────────────── */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+    padding: 18px 20px;
+    height: 100%;
+}
+
+.cardTitle {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.cardSub {
+    font-size: 0.72rem;
+    color: #9a9ab0;
+    margin: 2px 0 0;
+}
+
+/* ── Stat Cards ────────────────────────────── */
+.statCard {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    height: 100%;
+}
+
+.statLabel {
+    font-size: 0.7rem;
+    color: #9a9ab0;
+    margin: 0 0 4px;
+}
+
+.statValue {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* ── Tab Buttons ───────────────────────────── */
+.tabBtn {
+    background: none;
+    border: 1px solid #e8e8f0;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #9a9ab0;
+    padding: 4px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    font-family: inherit;
+}
+
+.tabActive {
+    background: #f26522;
+    color: #ffffff;
+    border-color: #f26522;
+}
+
+.dotSm {
+    background: none;
+    border: none;
+    color: #c0c0d0;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.dotSm:hover {
+    color: #f26522;
+}
+
+/* ── Sales Statistic ───────────────────────── */
+.legendDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.legendLabel {
+    font-size: 0.75rem;
+    color: #555570;
+    font-weight: 500;
+}
+
+.legendValue {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.toggleWrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.toggleLabel {
+    font-size: 0.72rem;
+    color: #9a9ab0;
+}
+
+.toggle {
+    position: relative;
+    width: 34px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggleSlider {
+    position: absolute;
+    inset: 0;
+    background: #f26522;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.toggleSlider::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    top: 3px;
+    right: 3px;
+    transition: transform 0.2s;
+}
+
+/* ── Sales Summary ─────────────────────────── */
+.summaryStatGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    flex: 1;
+}
+
+.summaryStatItem {
+    padding: 10px 14px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.summaryStatLabel {
+    font-size: 0.68rem;
+    color: #9a9ab0;
+    margin: 0 0 3px;
+}
+
+.summaryStatValue {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ── Loyal Customers ───────────────────────── */
+.loyalRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid #f5f5fa;
+}
+
+.loyalRow:last-child {
+    border-bottom: none;
+}
+
+.loyalAvatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.loyalName {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.loyalOrders {
+    font-size: 0.68rem;
+    color: #9a9ab0;
+    margin: 2px 0 0;
+}
+
+.loyalOrdersHighlight {
+    color: #f26522;
+    font-weight: 700;
+}
+
+.showMoreBtn {
+    background: none;
+    border: 1px solid #e8e8f0;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+    color: #9a9ab0;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.showMoreBtn:hover {
+    border-color: #f26522;
+    color: #f26522;
+}
+
+/* ── Best Seller Menus ─────────────────────── */
+.bestSellerItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5fa;
+}
+
+.bestSellerItem:last-child {
+    border-bottom: none;
+}
+
+/* IMAGE styles — replaces old empty div */
+.bestSellerThumb {
+    width: 64px;
+    height: 50px;
+    border-radius: 10px;
+    background: #f0f0f5;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.bestSellerName {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0 0 4px;
+    line-height: 1.3;
+}
+
+.bestSellerPrice {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.bestSellerMeta {
+    font-size: 0.68rem;
+    color: #9a9ab0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.heartIcon {
+    color: #f26522;
+}
+
+/* ── Most Favorites Items ──────────────────── */
+.categoryFilterWrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.catBtn {
+    background: none;
+    border: 1px solid #e8e8f0;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #9a9ab0;
+    padding: 5px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    font-family: inherit;
+}
+
+.catBtnActive {
+    background: #f26522;
+    color: #ffffff;
+    border-color: #f26522;
+}
+
+.favItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid #f5f5fa;
+}
+
+.favItem:last-child {
+    border-bottom: none;
+}
+
+/* IMAGE styles — replaces old empty div */
+.favThumb {
+    width: 70px;
+    height: 60px;
+    border-radius: 12px;
+    background: #f0f0f5;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.favName {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0 0 4px;
+    line-height: 1.3;
+}
+
+.favRating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.favStar {
+    font-size: 0.75rem;
+    color: #f26522;
+}
+
+.favStarEmpty {
+    font-size: 0.75rem;
+    color: #ddd;
+}
+
+.favReviews {
+    font-size: 0.68rem;
+    color: #9a9ab0;
+    margin: 0;
+}
+
+.favLikes {
+    font-size: 0.68rem;
+    color: #9a9ab0;
+    margin: 2px 0 0;
+}
+
+.favInterest {
+    text-align: center;
+    flex-shrink: 0;
+    min-width: 60px;
+}
+
+.favInterestPct {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.favInterestLabel {
+    font-size: 0.65rem;
+    color: #9a9ab0;
+    margin: 0;
+}
+
+.favSales {
+    text-align: center;
+    flex-shrink: 0;
+    min-width: 70px;
+}
+
+.favSalesValue {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.favSalesLabel {
+    font-size: 0.65rem;
+    color: #9a9ab0;
+    margin: 0;
+}
+
+/* ── Daily Trending Menus ──────────────────── */
+.trendItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid #f5f5fa;
+}
+
+.trendItem:last-child {
+    border-bottom: none;
+}
+
+/* IMAGE styles — replaces old empty div */
+.trendThumb {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #f0f0f5;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.trendInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.trendName {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.trendOrder {
+    font-size: 0.68rem;
+    color: #9a9ab0;
+    margin: 2px 0 0;
+}
+
+.trendPrice {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    flex-shrink: 0;
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 768px) {
+    .page {
+        padding: 16px 12px;
+    }
+
+    .statValue {
+        font-size: 1.1rem;
+    }
+
+    .summaryStatGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .favItem {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .categoryFilterWrap {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+    }
+}

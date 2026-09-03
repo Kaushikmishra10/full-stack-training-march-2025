@@ -1,0 +1,476 @@
+/* ============================================================
+   REVIEW PAGE — review.module.css
+   Full responsive — React Bootstrap Row/Col
+   ============================================================ */
+
+.page {
+  padding: 28px 32px;
+  background: #f8f9fc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Nunito', sans-serif;
+  box-sizing: border-box;
+}
+
+/* ── Header ── */
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #bbb;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.breadcrumbLink {
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+/* ══════════════════════════════════════
+   TOOLBAR
+══════════════════════════════════════ */
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #eee;
+  border-radius: 24px;
+  padding: 7px 16px;
+  gap: 8px;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.searchBox:focus-within {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.08);
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+  width: 100%;
+  color: #333;
+}
+
+.searchInput::placeholder {
+  color: #bbb;
+}
+
+.searchIcon {
+  color: #ff6b35;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Publish */
+.publishBtn {
+  display: flex;
+  align-items: center;
+  background: #e9f5e9;
+  border: 1.5px solid #27ae60;
+  color: #27ae60;
+  border-radius: 24px;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  gap: 7px;
+  white-space: nowrap;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.publishBtn:hover:not(:disabled) {
+  background: #d4edda;
+  transform: translateY(-1px);
+}
+
+/* Delete */
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  background: #f7eded;
+  border: 1.5px solid #e74c3c;
+  color: #e74c3c;
+  border-radius: 24px;
+  padding: 7px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  gap: 7px;
+  white-space: nowrap;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  background: #fadbd8;
+  transform: translateY(-1px);
+}
+
+.publishBtn:disabled,
+.deleteBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Icon circles */
+.iconCircleGreen {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #27ae60;
+  background: #c8f0d4;
+  color: #27ae60;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconCircleRed {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #e74c3c;
+  background: #fadbd8;
+  color: #e74c3c;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btnLabel {
+  font-size: 13px;
+}
+
+/* Filter */
+.filterBtn {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #eee;
+  border-radius: 24px;
+  padding: 7px 16px;
+  font-size: 13.5px;
+  color: #555;
+  cursor: pointer;
+  gap: 6px;
+  white-space: nowrap;
+  user-select: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.filterBtn:hover {
+  border-color: #ff6b35;
+  color: #ff6b35;
+}
+
+/* Refresh */
+.refreshBtn {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.35s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.refreshBtn:hover {
+  background: #5b54d6;
+  transform: rotate(180deg);
+}
+
+/* ══════════════════════════════════════
+   LIST CARD
+══════════════════════════════════════ */
+.listCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Select-all header */
+.selectAllRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 24px;
+  border-bottom: 1.5px solid #f2f2f2;
+  background: #fafafa;
+}
+
+.selectAllLabel {
+  font-size: 12.5px;
+  color: #888;
+  font-weight: 600;
+}
+
+/* Checkbox */
+.checkbox {
+  width: 15px;
+  height: 15px;
+  accent-color: #ff6b35;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Review row */
+.reviewRow {
+  padding: 18px 24px;
+  border-bottom: 1px solid #f5f5f5;
+  border-left: 3px solid transparent;
+  transition: background 0.15s;
+}
+
+.reviewRow:last-child {
+  border-bottom: none;
+}
+
+.reviewRow:hover {
+  background: #fdfafa;
+}
+
+.reviewRowSelected {
+  background: #fff8f5 !important;
+  border-left: 3px solid #ff6b35;
+}
+
+/* ── Avatar Image ── */
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+  background: #e0e0e0;
+}
+
+/* Fallback div agar image load na ho */
+.avatarFallback {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f26522, #e84d2b);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Customer info */
+.customerId {
+  font-size: 12.5px;
+  color: #ff6b35;
+  font-weight: 700;
+}
+
+.customerIdLabel {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 2px;
+}
+
+.date {
+  font-size: 11.5px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+/* Review text */
+.reviewText {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.65;
+}
+
+/* Rating */
+.ratingNumber {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.starsRow {
+  white-space: nowrap;
+}
+
+.starFilled {
+  color: #f39c12;
+  font-size: 15px;
+}
+
+.starEmpty {
+  color: #ddd;
+  font-size: 15px;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.acceptBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #27ae60;
+  background: #e9f5e9;
+  color: #27ae60;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.acceptBtn:hover {
+  background: #c8f0d4;
+}
+
+.rejectBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #e74c3c;
+  background: #f7eded;
+  color: #e74c3c;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.rejectBtn:hover {
+  background: #fadbd8;
+}
+
+/* Empty state */
+.emptyState {
+  text-align: center;
+  padding: 48px;
+  color: #bbb;
+  font-size: 14px;
+}
+
+/* ══════════════════════════════════════
+   FOOTER
+══════════════════════════════════════ */
+.footerText {
+  font-size: 13px;
+  color: #888;
+}
+
+/* ══════════════════════════════════════
+   BOOTSTRAP PAGINATION OVERRIDES
+══════════════════════════════════════ */
+:global(.pagination .page-item.active .page-link) {
+  background-color: #ff6b35 !important;
+  border-color: #ff6b35 !important;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+:global(.pagination .page-link) {
+  color: #ff6b35;
+  border-radius: 8px !important;
+  margin: 0 2px;
+  font-size: 13px;
+  border: 1.5px solid #eee;
+}
+
+:global(.pagination .page-link:focus) {
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.2);
+}
+
+:global(.pagination .page-link:hover) {
+  color: #ff6b35;
+  background: #fff3ef;
+  border-color: #ffd5c5;
+}
+
+:global(.pagination .page-item.disabled .page-link) {
+  color: #ccc;
+  border-color: #eee;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
+
+@media (max-width: 992px) {
+  .page { padding: 20px; }
+}
+
+@media (max-width: 768px) {
+  .page { padding: 16px 14px; }
+  .reviewRow { padding: 14px 16px; }
+  .avatar, .avatarFallback { width: 44px; height: 44px; }
+  .ratingNumber { font-size: 18px; }
+  .starFilled, .starEmpty { font-size: 13px; }
+  .publishBtn, .deleteBtn { padding: 6px 14px; font-size: 12px; }
+}
+
+@media (max-width: 576px) {
+  .page { padding: 12px 10px; }
+  .selectAllRow { padding: 10px 14px; }
+  .reviewRow { padding: 12px 14px; }
+  .heading { font-size: 20px; }
+  .reviewText { font-size: 12.5px; }
+  .btnLabel { display: none; }
+  .publishBtn, .deleteBtn {
+    padding: 7px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .avatar, .avatarFallback { width: 36px; height: 36px; border-radius: 8px; }
+  .ratingNumber { font-size: 16px; }
+  .starFilled, .starEmpty { font-size: 12px; }
+}

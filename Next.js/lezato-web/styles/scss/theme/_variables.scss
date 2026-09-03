@@ -1,0 +1,58 @@
+// Colors
+$primary:       #FD683E;
+$secondary:     #624FD1;
+$success:       #9B9B9B;
+$info:          #000000;
+$light:         #FFFFFF;
+$warning:       #FBFBFB;
+$danger:        #F4EDE5;
+
+// Font-Size
+$font-size-base:              1rem;
+$h1-font-size:                $font-size-base * 5.875;
+$h2-font-size:                $font-size-base * 3.938;
+$h3-font-size:                $font-size-base * 2.25;
+$h4-font-size:                $font-size-base * 1.563;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+// Containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// Nav-Bar Lignt
+$navbar-light-color: rgb(81, 49, 37);
+$navbar-light-active-color: rgb(196, 122, 95);
+$navbar-light-hover-color: rgb(196, 122, 95);
+
+// Navbar Dark
+$navbar-dark-color:                 rgb(255, 255, 255);
+$navbar-dark-hover-color:           rgb(196, 122, 95);
+$navbar-dark-active-color:          rgb(196, 122, 95);
+
+// Spacers
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .75,     // 12px
+  2: $spacer * 1,       // 16px
+  3: $spacer * 1.5,     // 24px
+  4: $spacer * 2,       // 32px
+  5: $spacer * 2.5,     // 40px
+  6: $spacer * 3,       // 48px
+  7: $spacer * 3.5,     // 56px
+  8: $spacer * 4,       // 64px
+  9: $spacer * 4.5,     // 72px
+);
+
+// Link
+$link-decoration: none; 
+
+// Form Border Radius
+$input-border-radius: none;
+$font-family-base: 'MuseoModerno', sans-serif;

@@ -1,0 +1,804 @@
+/* =============================================
+   dashboard.module.css
+   Layout: React-Bootstrap Row/Col
+   Colors & custom styles only here
+   ============================================= */
+
+.page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 32px 28px;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* ── Header ────────────────────────────────── */
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.breadcrumb {
+  font-size: 0.82rem;
+  color: #9a9ab0;
+}
+
+/* ── Base Card ─────────────────────────────── */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.cardTitle {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.cardSub {
+  font-size: 0.72rem;
+  color: #9a9ab0;
+  margin: 2px 0 0;
+}
+
+/* ── Stat Cards ────────────────────────────── */
+.statCard {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  height: 100%;
+}
+
+.statLabel {
+  font-size: 0.7rem;
+  color: #9a9ab0;
+  margin: 0 0 4px;
+}
+
+.statValue {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ── Revenue Chart ─────────────────────────── */
+.revenueAmt {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.revenueUp {
+  font-size: 0.72rem;
+  color: #22c55e;
+  font-weight: 500;
+}
+
+/* ── Trending Menus ────────────────────────── */
+.trendRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid #f5f5fa;
+}
+
+.trendRow:last-child {
+  border-bottom: none;
+}
+
+.trendRank {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #c0c0d0;
+  min-width: 22px;
+}
+
+.trendInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.trendName {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trendMeta {
+  font-size: 0.7rem;
+  color: #9a9ab0;
+  margin: 2px 0 0;
+}
+
+.trendPrice {
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.trendThumb {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #f0f0f5;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Tab Buttons ───────────────────────────── */
+.tabBtn {
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #9a9ab0;
+  padding: 5px 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.tabActive {
+  background: #f26522;
+  color: #ffffff;
+}
+
+/* ── Three Dots Button ─────────────────────── */
+.dotSm {
+  background: none;
+  border: none;
+  color: #c0c0d0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.dotSm:hover {
+  color: #f26522;
+  background: #fff0ea;
+}
+
+/* ── Customers List ────────────────────────── */
+.addCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f26522;
+  color: #ffffff;
+  border: none;
+  font-size: 1.3rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.addCircle:hover {
+  background: #e84d2b;
+}
+
+.custRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid #f5f5fa;
+}
+
+.custRow:last-of-type {
+  border-bottom: none;
+}
+
+.avatar {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.custName {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.memberBadge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #f26522;
+  margin: 1px 0 0;
+}
+
+.regularBadge {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #9a9ab0;
+  margin: 1px 0 0;
+}
+
+.showMore {
+  background: none;
+  border: 1px solid #e8e8f0;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 0.75rem;
+  color: #9a9ab0;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.showMore:hover {
+  border-color: #f26522;
+  color: #f26522;
+}
+
+/* ── Delivery Map ──────────────────────────── */
+.mapBox {
+  position: relative;
+  background: #eceef8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mapBadge {
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 5px 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.mapOrders {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.mapTime {
+  display: block;
+  font-size: 0.68rem;
+  color: #9a9ab0;
+}
+
+/* ── Shipping Schedule ─────────────────────── */
+.shipRow {
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f5fa;
+}
+
+.shipRow:last-of-type {
+  border-bottom: none;
+}
+
+.shipName {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shipTime {
+  font-size: 0.68rem;
+  color: #9a9ab0;
+  margin: 2px 0 0;
+}
+
+.shipAddr {
+  font-size: 0.68rem;
+  color: #9a9ab0;
+  white-space: pre-line;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.pinBtn {
+  background: #6c63ff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.pinBtn:hover {
+  background: #5a52e0;
+}
+
+/* ── Trending Keywords ─────────────────────── */
+.kwTrack {
+  height: 6px;
+  background: #f0f0f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kwFill {
+  height: 100%;
+  background: linear-gradient(90deg, #f26522 0%, #e84d2b 100%);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.kwTag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #f26522;
+}
+
+.kwCount {
+  font-size: 0.7rem;
+  color: #9a9ab0;
+}
+
+.otherTag {
+  background: #f5f5fa;
+  border-radius: 20px;
+  padding: 5px 13px;
+  font-size: 0.72rem;
+  color: #555570;
+  font-weight: 500;
+  border: 1px solid #ebebf5;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.otherTag:hover {
+  background: #fff0ea;
+  color: #f26522;
+  border-color: #f26522;
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE MEDIA QUERIES
+   992px se niche sab ek column mein aa jaye
+   ══════════════════════════════════════════════ */
+
+/* ── 992px — LG breakpoint (tablets landscape) ── */
+@media (max-width: 992px) {
+
+  .page {
+    padding: 20px 16px;
+  }
+
+  .pageTitle {
+    font-size: 1.25rem;
+  }
+
+  /* Stat cards — 2x2 grid on tablet */
+  .statCard {
+    padding: 14px 12px;
+  }
+
+  .statLabel {
+    font-size: 0.68rem;
+  }
+
+  .statValue {
+    font-size: 1rem;
+  }
+
+  /* Revenue amount smaller */
+  .revenueAmt {
+    font-size: 1.1rem;
+  }
+
+  /* Trending menus */
+  .trendName {
+    font-size: 0.75rem;
+  }
+
+  .trendMeta {
+    font-size: 0.68rem;
+  }
+
+  /* Customers */
+  .custName {
+    font-size: 0.75rem;
+  }
+
+  /* Shipping address hide on medium */
+  .shipAddr {
+    display: none;
+  }
+
+  /* Keywords card */
+  .kwTag {
+    font-size: 0.72rem;
+  }
+
+  .kwCount {
+    font-size: 0.68rem;
+  }
+
+  .otherTag {
+    font-size: 0.68rem;
+    padding: 4px 10px;
+  }
+}
+
+/* ── 768px — MD breakpoint (tablets portrait) ── */
+@media (max-width: 768px) {
+
+  .page {
+    padding: 16px 12px;
+  }
+
+  .pageTitle {
+    font-size: 1.1rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.72rem;
+  }
+
+  /* Cards padding kam karo */
+  .card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .statCard {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  /* Stat values */
+  .statLabel {
+    font-size: 0.65rem;
+  }
+
+  .statValue {
+    font-size: 0.95rem;
+  }
+
+  /* Revenue */
+  .revenueAmt {
+    font-size: 1rem;
+  }
+
+  .revenueUp {
+    font-size: 0.65rem;
+  }
+
+  /* Card titles */
+  .cardTitle {
+    font-size: 0.85rem;
+  }
+
+  .cardSub {
+    font-size: 0.68rem;
+  }
+
+  /* Tab buttons */
+  .tabBtn {
+    font-size: 0.68rem;
+    padding: 4px 10px;
+  }
+
+  /* Trending menus */
+  .trendRank {
+    font-size: 0.68rem;
+    min-width: 18px;
+  }
+
+  .trendName {
+    font-size: 0.72rem;
+  }
+
+  .trendThumb {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  /* Customers */
+  .addCircle {
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+  }
+
+  .custName {
+    font-size: 0.72rem;
+  }
+
+  .memberBadge,
+  .regularBadge {
+    font-size: 0.62rem;
+  }
+
+  /* Map */
+  .mapBadge {
+    padding: 4px 10px;
+  }
+
+  .mapOrders {
+    font-size: 0.72rem;
+  }
+
+  .mapTime {
+    font-size: 0.62rem;
+  }
+
+  /* Shipping */
+  .shipName {
+    font-size: 0.72rem;
+  }
+
+  .shipTime {
+    font-size: 0.62rem;
+  }
+
+  .shipAddr {
+    display: none;
+  }
+
+  .pinBtn {
+    width: 26px;
+    height: 26px;
+    font-size: 0.62rem;
+  }
+
+  /* Keywords */
+  .kwTrack {
+    height: 5px;
+  }
+
+  .kwTag {
+    font-size: 0.7rem;
+  }
+
+  .kwCount {
+    font-size: 0.65rem;
+  }
+
+  .otherTag {
+    font-size: 0.65rem;
+    padding: 3px 9px;
+  }
+}
+
+/* ── 576px — SM breakpoint (mobile landscape / large phones) ── */
+@media (max-width: 576px) {
+
+  .page {
+    padding: 12px 10px;
+  }
+
+  .pageTitle {
+    font-size: 1rem;
+  }
+
+  /* Cards */
+  .card {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .statCard {
+    padding: 10px;
+    border-radius: 10px;
+    gap: 4px;
+  }
+
+  .statLabel {
+    font-size: 0.6rem;
+    margin-bottom: 2px;
+  }
+
+  .statValue {
+    font-size: 0.88rem;
+  }
+
+  /* Revenue */
+  .revenueAmt {
+    font-size: 0.92rem;
+  }
+
+  /* Tab buttons */
+  .tabBtn {
+    font-size: 0.62rem;
+    padding: 3px 8px;
+  }
+
+  .dotSm {
+    font-size: 0.85rem;
+    padding: 2px 4px;
+  }
+
+  /* Card headings */
+  .cardTitle {
+    font-size: 0.8rem;
+  }
+
+  .cardSub {
+    font-size: 0.62rem;
+  }
+
+  /* Trending menus — thumb hide karo */
+  .trendThumb {
+    display: none;
+  }
+
+  .trendName {
+    font-size: 0.7rem;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .trendMeta {
+    font-size: 0.62rem;
+  }
+
+  /* Customers */
+  .custRow {
+    padding: 5px 0;
+    gap: 8px;
+  }
+
+  .custName {
+    font-size: 0.68rem;
+  }
+
+  .memberBadge,
+  .regularBadge {
+    font-size: 0.58rem;
+  }
+
+  .addCircle {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+
+  /* Map badge */
+  .mapBadge {
+    bottom: 6px;
+    left: 8px;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  /* Shipping */
+  .shipName {
+    font-size: 0.68rem;
+  }
+
+  .shipTime {
+    font-size: 0.58rem;
+  }
+
+  .shipAddr {
+    display: none;
+  }
+
+  .pinBtn {
+    width: 24px;
+    height: 24px;
+    font-size: 0.55rem;
+  }
+
+  /* Keywords */
+  .kwTrack {
+    height: 4px;
+  }
+
+  .kwTag {
+    font-size: 0.65rem;
+  }
+
+  .kwCount {
+    font-size: 0.6rem;
+  }
+
+  .otherTag {
+    font-size: 0.6rem;
+    padding: 3px 8px;
+    border-radius: 14px;
+  }
+
+  /* Show more button */
+  .showMore {
+    width: 24px;
+    height: 24px;
+    font-size: 0.65rem;
+  }
+}
+
+/* ── 400px — XS (small phones) ── */
+@media (max-width: 400px) {
+
+  .page {
+    padding: 10px 8px;
+  }
+
+  .statCard {
+    padding: 8px;
+  }
+
+  .statLabel {
+    font-size: 0.55rem;
+  }
+
+  .statValue {
+    font-size: 0.8rem;
+  }
+
+  .revenueAmt {
+    font-size: 0.85rem;
+  }
+
+  .cardTitle {
+    font-size: 0.75rem;
+  }
+
+  .tabBtn {
+    font-size: 0.58rem;
+    padding: 3px 7px;
+  }
+
+  .trendName {
+    font-size: 0.65rem;
+  }
+
+  .custName {
+    font-size: 0.62rem;
+  }
+
+  .shipName {
+    font-size: 0.62rem;
+  }
+
+  .kwTag {
+    font-size: 0.6rem;
+  }
+
+  .otherTag {
+    font-size: 0.58rem;
+    padding: 2px 7px;
+  }
+}

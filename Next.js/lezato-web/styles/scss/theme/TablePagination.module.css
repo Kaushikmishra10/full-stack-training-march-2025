@@ -1,0 +1,38 @@
+.footer {
+  padding: 4px 0;
+}
+
+.footerText {
+  font-size: 0.83rem;
+  color: #9a9ab0;
+}
+
+/* Bootstrap Pagination Override */
+.pagination :global(.page-item .page-link) {
+  color: #f26522;
+  border: 1px solid #e8e8f0;
+  border-radius: 8px !important;
+  margin: 0 2px;
+  font-size: 0.82rem;
+  padding: 5px 11px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.pagination :global(.page-item .page-link:hover) {
+  background: #fff0ea;
+  color: #f26522;
+  border-color: #f26522;
+}
+
+.pagination :global(.page-item.active .page-link) {
+  background: #f26522;
+  border-color: #f26522;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.pagination :global(.page-item.disabled .page-link) {
+  color: #c0c0d0;
+  border-color: #e8e8f0;
+  background: transparent;
+}

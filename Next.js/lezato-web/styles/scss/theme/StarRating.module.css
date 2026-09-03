@@ -1,0 +1,12 @@
+.star {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.starFilled {
+  color: #f26522;
+}
+
+.starEmpty {
+  color: #ddd;
+}

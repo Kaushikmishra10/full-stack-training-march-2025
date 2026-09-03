@@ -1,0 +1,414 @@
+.page {
+    padding: 28px 32px;
+    background: #f8f9fc;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.breadcrumb {
+    font-size: 13px;
+    color: #bbb;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1.5px solid #eee;
+    border-radius: 24px;
+    padding: 6px 14px;
+    max-width: 260px;
+    width: 100%;
+    gap: 8px;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    width: 100%;
+}
+
+.searchIcon {
+    color: #ff6b35;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.addBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ff6b35;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 9px 22px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.filterBtn {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1.5px solid #eee;
+    border-radius: 24px;
+    padding: 8px 18px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.refreshBtn {
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.tableCard {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 12px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.theadRow {
+    background: #fafafa;
+}
+
+.th {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+    white-space: nowrap;
+}
+
+.tr {
+    border-left: 3px solid transparent;
+    transition: background 0.15s;
+}
+
+.trSelected {
+    background: #fff8f5;
+    border-left: 3px solid #ff6b35;
+}
+
+.td {
+    padding: 14px 18px;
+    font-size: 13px;
+    color: #555;
+    border-bottom: 1px solid #f7f7f7;
+    white-space: nowrap;
+}
+
+.tdBold {
+    padding: 14px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 1px solid #f7f7f7;
+    white-space: nowrap;
+}
+
+.lastOrderBadge {
+    display: inline-block;
+    background: #fff0eb;
+    color: #ff6b35;
+    border-radius: 16px;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.lastOrderBadgeSelected {
+    display: inline-block;
+    background: #ff6b35;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dotBtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccc;
+    letter-spacing: 2px;
+    padding: 0 4px;
+    transition: color 0.15s;
+}
+
+.dotBtn:hover {
+    color: #ff6b35;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.footerText {
+    font-size: 13px;
+    color: #888;
+}
+
+.noData {
+    text-align: center;
+    padding: 32px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* ── Dropdown ── */
+.dropdown {
+    position: absolute;
+    right: 8px;
+    top: 110%;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+    z-index: 100;
+    min-width: 180px;
+    overflow: hidden;
+    animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    border-bottom: 1px solid #f7f7f7;
+    background: transparent;
+    font-size: 13px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #444;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.12s, color 0.12s;
+}
+
+.dropdownItem:hover {
+    background: #fff4f0;
+    color: #ff6b35;
+}
+
+.dropdownItemDelete {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #444;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.12s, color 0.12s;
+}
+
+.dropdownItemDelete:hover {
+    background: #fff1f1;
+    color: #ef4444;
+}
+
+/* ── Hidden Info in Dropdown (Responsive) ── */
+/* Dropdown ke andar extra info rows */
+.dropdownDivider {
+    border: none;
+    border-top: 1px solid #f0f0f0;
+    margin: 4px 0;
+}
+
+.dropdownInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    border-bottom: 1px solid #f7f7f7;
+    gap: 2px;
+}
+
+.dropdownInfoLabel {
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dropdownInfoValue {
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE — Column Hide/Show
+───────────────────────────────────────── */
+
+/* 1200px se niche: Location, Total Spent, Last Order hide */
+@media (max-width: 1200px) {
+    .colLocation,
+    .colTotalSpent,
+    .colLastOrder {
+        display: none;
+    }
+
+    .showBelow1200 {
+        display: flex !important;
+    }
+}
+
+/* 768px se niche: Join Date bhi hide */
+@media (max-width: 768px) {
+    .colJoinDate {
+        display: none;
+    }
+
+    .showBelow768 {
+        display: flex !important;
+    }
+
+    .page {
+        padding: 20px 16px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .searchBox {
+        max-width: 100%;
+        flex: 1 1 100%;
+        order: 1;
+    }
+
+    .addBtn {
+        margin-left: 0;
+        flex: 1 1 auto;
+        justify-content: center;
+        order: 2;
+    }
+
+    .filterBtn { order: 3; }
+    .refreshBtn { order: 4; }
+
+    .th, .td, .tdBold {
+        padding: 12px 12px;
+        font-size: 12px;
+    }
+}
+
+/* 480px se niche */
+@media (max-width: 480px) {
+    .page { padding: 16px 12px; }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-bottom: 16px;
+    }
+
+    .heading { font-size: 18px; }
+
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .searchBox { max-width: 100%; width: 100%; }
+
+    .addBtn {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        padding: 10px 16px;
+    }
+
+    .filterBtn { width: 100%; justify-content: center; }
+    .refreshBtn { align-self: flex-end; }
+
+    .tableCard { border-radius: 12px; }
+
+    .th, .td, .tdBold {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .lastOrderBadge, .lastOrderBadgeSelected {
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+
+    .dropdown {
+        right: auto;
+        left: auto;
+    }
+}
+
+/* Default: sabhi info rows hidden (sirf responsive mein dikhenge) */
+.showBelow1200,
+.showBelow768 {
+    display: none !important;
+}

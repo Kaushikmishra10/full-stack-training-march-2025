@@ -1,0 +1,71 @@
+/* for badges */
+.pending-badge {
+  background-color: rgba(211, 209, 254, 0.93) !important;
+  color: rgba(49, 96, 252, 0.93) !important;
+}
+
+.negotating-badge {
+  background-color: rgba(254, 229, 209, 0.93) !important;
+  color: rgba(252, 140, 49, 0.93) !important;
+}
+
+.failed-badge {
+  background-color: rgba(254, 209, 235, 0.93) !important;
+  color: rgba(252, 49, 147, 0.93) !important;
+}
+
+.paid-badge {
+  background-color: rgba(209, 254, 211, 0.93) !important;
+  color: rgba(5, 197, 88, 0.93) !important;
+}
+.overdue-badge {
+  background-color: rgba(240, 209, 254, 0.93) !important;
+  color: rgba(116, 5, 128, 0.93) !important;
+}
+
+
+
+/* for breadcrumb */
+.rb-breadcrumb a {
+  text-decoration: none;
+  color: gray; 
+}
+
+.rb-breadcrumb a:hover {
+  color: black;
+}
+
+
+.breadcrumb-item.active  {
+  color: black;
+}
+
+
+/* for images  */
+.avatar-stack {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+
+  margin-left: -15px; /* overlap */
+  position: relative;
+  z-index: 1;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avatar:hover {
+  z-index: 999; /* hover wala top pe */
+  transform: scale(1.1);
+}

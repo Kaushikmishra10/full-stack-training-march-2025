@@ -1,0 +1,19 @@
+// @import "./theme/variables";
+
+
+
+
+// styles/scss/theme.scss
+// styles/scss/theme.scss
+@import "./theme/variables"; // Custom variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.accordion-success{
+    color: var(--bs-success) !important;
+}
+
+.h-line{
+    width: 2px;
+    height: 36px;
+    background-color: #E9E9E9;
+}
