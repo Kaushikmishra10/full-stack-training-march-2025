@@ -1,0 +1,66 @@
+// Background Color
+$bg-color: #003061;
+
+// Headings Colors
+$primary-black: #050509;
+$primary-white: #ffffff;
+$primary-accent: #3AA9E9;
+$Secondary-accent: #D0DBFF;
+
+// Text Colors
+$text-primary-color: #828284;
+$text-secondary-color: #58585B;
+$text-tertiary-color: #9F9F9F;
+
+// Fonts
+$font-family: "DM Sans", sans-serif;
+$fonts:(
+    1: 3.5rem,
+    2: 3rem,
+    3: 2.5rem,
+    4: 2rem,
+    5: 1.5rem,
+    6: 1.25rem,
+
+);
+
+@each $key, $value in $fonts{
+    .fs#{$key}{
+        font-size: $value;
+    }
+
+    .h#{$key}, h#{$key}{
+        font-size: $value;
+        font-family: $font-family;
+        font-weight: 700;
+    }
+};
+
+// Paragraph
+
+$texts:(
+    1: 1rem,
+    2: .875rem,
+
+);
+
+@each $key, $value in $texts{
+    .text#{$key}{
+        font-size: $value;
+    }
+};
+
+:root{
+    --primary-bg-color: #{$bg-color};
+    --primary-black: #{$primary-black};
+    --primary-white: #{$primary-white};
+    --primary-accent: #{$primary-accent};
+    --secondary-accent: #{$Secondary-accent};
+
+    --text-primary-color: #{$text-primary-color};
+    --text-secondary-color: #{$text-secondary-color};
+    --text-tertiary-color: #{$text-tertiary-color};
+
+    --font-family: #{$font-family};
+
+}

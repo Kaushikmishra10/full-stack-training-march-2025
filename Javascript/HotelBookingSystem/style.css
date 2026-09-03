@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #1d3557, #457b9d);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Rooms */
+.rooms {
+    width: 65%;
+}
+
+.room-card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.room-card h3 {
+    margin-bottom: 5px;
+}
+
+.room-card span {
+    display: block;
+    font-weight: bold;
+    color: #1d3557;
+    margin: 10px 0;
+}
+
+/* Quantity */
+.qty {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.qty button {
+    width: 30px;
+    height: 30px;
+    background: #457b9d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.qty span {
+    width: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Buttons */
+.room-card button {
+    background: #1d3557;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Booking */
+.booking {
+    width: 35%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.booking label {
+    display: block;
+    margin-top: 10px;
+}
+
+.booking input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#booking-items {
+    list-style: none;
+    margin: 15px 0;
+}
+
+#booking-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+/* Confirm Button */
+.book-btn {
+    width: 100%;
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    .rooms, .booking {
+        width: 100%;
+    }
+}

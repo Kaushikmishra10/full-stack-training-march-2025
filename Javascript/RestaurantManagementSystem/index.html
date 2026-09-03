@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DineMaster | Restaurant RMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>DineMaster 🍴</h1>
+    <p>Delicious food, delivered fast</p>
+</header>
+
+<main class="container">
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-grid">
+            <div class="card">
+                <h3>Pizza</h3>
+                <p>Cheesy delight</p>
+                <span>₹250</span>
+                <button onclick="addToCart('Pizza', 250)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Burger</h3>
+                <p>Juicy & tasty</p>
+                <span>₹150</span>
+                <button onclick="addToCart('Burger', 150)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Noodles</h3>
+                <p>Cheesy delight</p>
+                <span>₹120</span>
+                <button onclick="addToCart('Burger', 150)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Pasta</h3>
+                <p>Italian special</p>
+                <span>₹200</span>
+                <button onclick="addToCart('Pasta', 200)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Classic Veg Burger</h3>
+                <p>Veggie & Tasty</p>
+                <span>₹120</span>
+                <button onclick="addToCart('Pasta', 200)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Gulab Jamun</h3>
+                <p>Sweet</p>
+                <span>₹50</span>
+                <button onclick="addToCart('Pasta', 200)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Chocolate Brownie</h3>
+                <p>Sweet</p>
+                <span>₹90</span>
+                <button onclick="addToCart('Pasta', 200)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Fried Rice</h3>
+                <p>Chinese style</p>
+                <span>₹180</span>
+                <button onclick="addToCart('Fried Rice', 180)">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <h3>Coffee</h3>
+                <p>Freshly brewed</p>
+                <span>₹80</span>
+                <button onclick="addToCart('Coffee', 80)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <aside class="cart">
+        <h2>🛒 Your Order</h2>
+        <ul id="cart-items"></ul>
+
+        <div class="bill">
+            <p>Subtotal: ₹<span id="subtotal">0</span></p>
+            <p>GST (5%): ₹<span id="gst">0</span></p>
+            <h3>Total: ₹<span id="total">0</span></h3>
+
+            <button class="order-btn" onclick="placeOrder()">Place Order</button>
+            <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+        </div>
+    </aside>
+
+</main>
+
+<footer>
+    <p>© 2026 DineMaster Restaurant</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

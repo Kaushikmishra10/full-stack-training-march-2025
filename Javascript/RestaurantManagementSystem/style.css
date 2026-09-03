@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #6804e9, #5aa4e1);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Menu */
+.menu {
+    width: 70%;
+}
+
+.menu h2 {
+    margin-bottom: 15px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.card span {
+    font-weight: bold;
+    color: #e63946;
+    display: block;
+    margin: 10px 0;
+}
+
+.card button {
+    background: #1d3557;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #457b9d;
+}
+
+/* Cart */
+.cart {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+#cart-items button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: red;
+}
+
+.bill p {
+    margin: 5px 0;
+}
+
+.order-btn {
+    width: 100%;
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    width: 100%;
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1d3557;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .menu, .cart {
+        width: 100%;
+    }
+}
